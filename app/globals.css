@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  /* Main headings */
+  h1.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  /* Project titles */
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+  }
+
+  /* Body text */
+  p, .body-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+
+  /* Navigation and footer */
+  .nav-text, footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+  }
+
+  /* Special text (like rotating text, blur text) */
+  .special-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+}
